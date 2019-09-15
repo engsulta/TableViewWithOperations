@@ -17,6 +17,9 @@
 		35131CB5232E6B720028ABF7 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CB4232E6B720028ABF7 /* ImageModel.swift */; };
 		35131CB7232E711F0028ABF7 /* ImagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CB6232E711F0028ABF7 /* ImagesTableViewController.swift */; };
 		35131CB9232E72B60028ABF7 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CB8232E72B60028ABF7 /* ImageTableViewCell.swift */; };
+		35131CBB232EA8E30028ABF7 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CBA232EA8E30028ABF7 /* ImageProvider.swift */; };
+		35131CBD232EA9D70028ABF7 /* ImageTabelViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CBC232EA9D70028ABF7 /* ImageTabelViewPresenter.swift */; };
+		35131CBF232EAA3A0028ABF7 /* AsynchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CBE232EAA3A0028ABF7 /* AsynchOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		35131CB4232E6B720028ABF7 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		35131CB6232E711F0028ABF7 /* ImagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTableViewController.swift; sourceTree = "<group>"; };
 		35131CB8232E72B60028ABF7 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		35131CBA232EA8E30028ABF7 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
+		35131CBC232EA9D70028ABF7 /* ImageTabelViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTabelViewPresenter.swift; sourceTree = "<group>"; };
+		35131CBE232EAA3A0028ABF7 /* AsynchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				35131CB4232E6B720028ABF7 /* ImageModel.swift */,
+				35131CBA232EA8E30028ABF7 /* ImageProvider.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 		35131CAD232E66180028ABF7 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				35131CBE232EAA3A0028ABF7 /* AsynchOperation.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 		35131CB0232E66970028ABF7 /* presenters */ = {
 			isa = PBXGroup;
 			children = (
+				35131CBC232EA9D70028ABF7 /* ImageTabelViewPresenter.swift */,
 			);
 			path = presenters;
 			sourceTree = "<group>";
@@ -329,11 +338,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35131CBD232EA9D70028ABF7 /* ImageTabelViewPresenter.swift in Sources */,
 				35131C7C232E65F80028ABF7 /* AppDelegate.swift in Sources */,
 				35131C84232E65F80028ABF7 /* TableView_Handling_Operations.xcdatamodeld in Sources */,
+				35131CBB232EA8E30028ABF7 /* ImageProvider.swift in Sources */,
 				35131CB5232E6B720028ABF7 /* ImageModel.swift in Sources */,
 				35131CB7232E711F0028ABF7 /* ImagesTableViewController.swift in Sources */,
 				35131CB9232E72B60028ABF7 /* ImageTableViewCell.swift in Sources */,
+				35131CBF232EAA3A0028ABF7 /* AsynchOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
