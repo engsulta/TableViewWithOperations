@@ -35,8 +35,6 @@ class ImageTableViewCell: UITableViewCell {
             tcImageView.image = image
             tcImageView.alpha = 0
             
-            
-            
             UIView.animate(withDuration: 0.2) {
                 self.tcImageView.alpha = 1
                 self.tcActivityIndicator.alpha = 0

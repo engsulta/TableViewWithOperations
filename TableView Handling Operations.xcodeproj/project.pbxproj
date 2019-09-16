@@ -20,6 +20,14 @@
 		35131CBB232EA8E30028ABF7 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CBA232EA8E30028ABF7 /* ImageProvider.swift */; };
 		35131CBD232EA9D70028ABF7 /* ImageTabelViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CBC232EA9D70028ABF7 /* ImageTabelViewPresenter.swift */; };
 		35131CBF232EAA3A0028ABF7 /* AsynchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CBE232EAA3A0028ABF7 /* AsynchOperation.swift */; };
+		35131CC1232EAE770028ABF7 /* ImageDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CC0232EAE770028ABF7 /* ImageDownloadOperation.swift */; };
+		35131CC3232EBFB10028ABF7 /* NetworkSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CC2232EBFB10028ABF7 /* NetworkSimulator.swift */; };
+		35131CC5232ECC1D0028ABF7 /* imageFilterationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CC4232ECC1D0028ABF7 /* imageFilterationOperation.swift */; };
+		35131CC7232ECE810028ABF7 /* GradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CC6232ECE810028ABF7 /* GradientGenerator.swift */; };
+		35131CC9232ECE8F0028ABF7 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CC8232ECE8F0028ABF7 /* UIImageExtensions.swift */; };
+		35131CCD232ECF1E0028ABF7 /* TiltShiftOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CCC232ECF1E0028ABF7 /* TiltShiftOperation.swift */; };
+		35131CCF232ECFAB0028ABF7 /* PostMaskOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CCE232ECFAB0028ABF7 /* PostMaskOperation.swift */; };
+		35131CD1232ED0380028ABF7 /* PostProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35131CD0232ED0380028ABF7 /* PostProcess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +67,14 @@
 		35131CBA232EA8E30028ABF7 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
 		35131CBC232EA9D70028ABF7 /* ImageTabelViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTabelViewPresenter.swift; sourceTree = "<group>"; };
 		35131CBE232EAA3A0028ABF7 /* AsynchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchOperation.swift; sourceTree = "<group>"; };
+		35131CC0232EAE770028ABF7 /* ImageDownloadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadOperation.swift; sourceTree = "<group>"; };
+		35131CC2232EBFB10028ABF7 /* NetworkSimulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSimulator.swift; sourceTree = "<group>"; };
+		35131CC4232ECC1D0028ABF7 /* imageFilterationOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageFilterationOperation.swift; sourceTree = "<group>"; };
+		35131CC6232ECE810028ABF7 /* GradientGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientGenerator.swift; sourceTree = "<group>"; };
+		35131CC8232ECE8F0028ABF7 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		35131CCC232ECF1E0028ABF7 /* TiltShiftOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltShiftOperation.swift; sourceTree = "<group>"; };
+		35131CCE232ECFAB0028ABF7 /* PostMaskOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMaskOperation.swift; sourceTree = "<group>"; };
+		35131CD0232ED0380028ABF7 /* PostProcess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostProcess.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +169,11 @@
 		35131CAD232E66180028ABF7 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
-				35131CBE232EAA3A0028ABF7 /* AsynchOperation.swift */,
+				35131CCB232ECEA20028ABF7 /* uitility */,
+				35131CCA232ECE930028ABF7 /* abstract */,
+				35131CC0232EAE770028ABF7 /* ImageDownloadOperation.swift */,
+				35131CCC232ECF1E0028ABF7 /* TiltShiftOperation.swift */,
+				35131CCE232ECFAB0028ABF7 /* PostMaskOperation.swift */,
 			);
 			path = Operations;
 			sourceTree = "<group>";
@@ -205,6 +225,26 @@
 				35131C85232E65F90028ABF7 /* Assets.xcassets */,
 			);
 			path = assets;
+			sourceTree = "<group>";
+		};
+		35131CCA232ECE930028ABF7 /* abstract */ = {
+			isa = PBXGroup;
+			children = (
+				35131CC4232ECC1D0028ABF7 /* imageFilterationOperation.swift */,
+				35131CBE232EAA3A0028ABF7 /* AsynchOperation.swift */,
+			);
+			path = abstract;
+			sourceTree = "<group>";
+		};
+		35131CCB232ECEA20028ABF7 /* uitility */ = {
+			isa = PBXGroup;
+			children = (
+				35131CD0232ED0380028ABF7 /* PostProcess.swift */,
+				35131CC2232EBFB10028ABF7 /* NetworkSimulator.swift */,
+				35131CC8232ECE8F0028ABF7 /* UIImageExtensions.swift */,
+				35131CC6232ECE810028ABF7 /* GradientGenerator.swift */,
+			);
+			path = uitility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,11 +378,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35131CC5232ECC1D0028ABF7 /* imageFilterationOperation.swift in Sources */,
+				35131CD1232ED0380028ABF7 /* PostProcess.swift in Sources */,
 				35131CBD232EA9D70028ABF7 /* ImageTabelViewPresenter.swift in Sources */,
+				35131CCF232ECFAB0028ABF7 /* PostMaskOperation.swift in Sources */,
 				35131C7C232E65F80028ABF7 /* AppDelegate.swift in Sources */,
 				35131C84232E65F80028ABF7 /* TableView_Handling_Operations.xcdatamodeld in Sources */,
 				35131CBB232EA8E30028ABF7 /* ImageProvider.swift in Sources */,
+				35131CC9232ECE8F0028ABF7 /* UIImageExtensions.swift in Sources */,
 				35131CB5232E6B720028ABF7 /* ImageModel.swift in Sources */,
+				35131CC3232EBFB10028ABF7 /* NetworkSimulator.swift in Sources */,
+				35131CC7232ECE810028ABF7 /* GradientGenerator.swift in Sources */,
+				35131CCD232ECF1E0028ABF7 /* TiltShiftOperation.swift in Sources */,
+				35131CC1232EAE770028ABF7 /* ImageDownloadOperation.swift in Sources */,
 				35131CB7232E711F0028ABF7 /* ImagesTableViewController.swift in Sources */,
 				35131CB9232E72B60028ABF7 /* ImageTableViewCell.swift in Sources */,
 				35131CBF232EAA3A0028ABF7 /* AsynchOperation.swift in Sources */,
